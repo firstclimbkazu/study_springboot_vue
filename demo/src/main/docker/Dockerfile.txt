@@ -1,0 +1,6 @@
+FROM dockerfile/java:oracle-java8
+
+ADD demo.jar /opt/demo/
+EXPOSE 8080
+WORKDIR /opt/demo/
+CMD ["java", "-Xms512m", "-Xmx1g", "-jar", "demo.jar"]
