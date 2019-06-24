@@ -19,11 +19,11 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
-    @RequestMapping(value = "/")
+/*    @RequestMapping(value = "/")
     String hello() {
         return "Hello World!";
     }
-
+*/
     @Bean("Thread1") // この設定は指定していないので利用されていない
     public Executor taskExecutor1() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
